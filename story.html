@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head></head>
+<body>
+<h1 style="text-align: center">Η ιστορία της μικρής Βασιλικής Μπαρκούκη</h1>
+
+<p>Ουσιαστικό (ουδέτερο, ενικός): <input id="noun1" type="text"></input></p>
+<p>Ουσιαστικό (θηλυκό, ενικός): <input id="noun2" type="text"></input></p>
+<p>Ρήμα (γ' ενικό, παρατατικός):<input id="verb1" type="text"></input></p>
+<p>Όνομα (θηλυκό): <input id="name" type="text"></input></p>
+<p>Ρήμα (γ' ενικό, αόριστος): <input id="verb2" type="text"></input></p>
+<p>Επίθετο (θηλυκό): <input id="adjective" type="text"></input></p>
+<p>Χρώμα: <input id="color1" type="text"></input></p>
+<p>Χρώμα: <input id="color2" type="text"></input></p>
+<p>Χρώμα: <input id="color3" type="text"></input></p>
+<input type="button" value="Ιστορία" onClick="
+noun1 = document.getElementById('noun1').value;
+noun2 = document.getElementById('noun2').value;
+verb1 = document.getElementById('verb1').value;
+verb2 = document.getElementById('verb2').value;
+name = document.getElementById('name').value;
+adjective = document.getElementById('adjective').value;
+color1 = document.getElementById('color1').value;
+color2 = document.getElementById('color2').value;
+color3 = document.getElementById('color3').value;                                               
+document.getElementById('text').innerHTML='Μια φορά και έναν ' + noun1 + ' σε μια πολύ μακρινή χώρα ζούσε μια ' + noun2 + '. Μια μέρα σαν όλες τις άλλες, η ' + noun2 + ' κάθονταν στο δωμάτιό της και δούλευε δίπλα στο παράθυρο. Όμως καθώς ' + verb1 + ' έξω που χιόνιζε, τρύπησε κατά λάθος το δάκτυλό της. Τότε τρείς σταγόνες αίμα έπεσαν από το δάκτυλό της πάνω στο χιόνι. Η ' + noun2 + ' κοίταξε το αίμα και είπε: &#34;Θέλω όταν γεννηθεί η κόρη μου να είναι ' + color1 + ' σαν το χιόνι, ' + color2 + ' σαν το αίμα και ' + color3 + ' σαν το ξύλο από το παράθυρό μου &#34;</br></br>Και έτσι έγινε. Όταν γεννήθηκε η κόρη της ' + noun2 + ' είχε ' + color1 + ' δέρμα σαν το χιόνι, ' + color2 + ' μάγουλα σαν το αίμα και τα μαλλιά της ήταν ' + color3 + ' σαν το ξύλο του παραθύρου. Γι αυτό ' + verb2 + ' το κορίτσι &#34;' + name + '&#34;</br></br>Μια μέρα όμως η ' + noun2 + ' πέθανε και ο βασιλιάς σύντομα παντρεύτηκε μια ' + adjective + ' ' + noun2 + ' που ήταν πολύ όμορφη αλλά και πολύ κακιά και δεν ήθελε καμιά να είναι ομορφότερη από αυτήν.'"></input>
+
+</br>
+<p id="text"></p>
+</body>
+</html>
